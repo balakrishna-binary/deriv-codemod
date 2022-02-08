@@ -25,7 +25,6 @@ module.exports = function (file, api, options) {
   };
 
   function addTsTypeToTheComponentParam(componentName, typeName) {
-    // doesn't work with React.memo or React.forwardRef
     root
       .find(j.VariableDeclarator, {
         id: { name: componentName },
